@@ -325,3 +325,6 @@ my_dict = {"Router1": ["Hostname", "IP Address", "Subnet Mask"], "Router2": ["Ho
 #In dictionary we can also have tuple as a value of the key, example below  
 
 my_dict = {"Router1": ("Hostname", "IP Address", "Subnet Mask"), "Router2": ("Hostname", "IP Address", "Subnet Mask")} # here we have a dictionary with two key value pairs, where the value of each key is a tuple, for example the value of the key Router1 is a tuple with three elements, where Hostname is the first element, IP Address is the second element and Subnet Mask is the third element, similarly the value of the key Router2 is also a tuple with three elements, where Hostname is the first element, IP Address is the second element and Subnet Mask is the third element    
+
+my_dict = {"Router1": {"Hostname": "Router1", "IP Address": "10.10.10.1"}}
+print(my_dict["Router1"]["Hostname"]) # it will print the value of the key Hostname which is Router1, here we are accessing the value of the key Hostname which is inside the dictionary that is the value of the key Router1, it will show how to access nested dictionary in python.  
